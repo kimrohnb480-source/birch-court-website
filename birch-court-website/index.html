@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>77 Birch Court | Reyes Home Group</title>
+<style>
+:root{--navy:#1F2A44;--gold:#C9A227;--white:#fff;--light:#f5f6f8;--text:#343b49}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6;background:var(--white)}
+header{background:var(--navy);color:white;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:20px;font-weight:bold;letter-spacing:1px}.logo span{color:var(--gold)}
+nav a{color:white;text-decoration:none;margin-left:25px;font-size:14px;transition:color .3s}
+nav a:hover{color:var(--gold)}
+.hero{min-height:500px;background:linear-gradient(90deg,rgba(31,42,68,.88),rgba(31,42,68,.25)),url("images/front.jpg") center/cover no-repeat;display:flex;align-items:center;padding:70px 9%;color:white;animation:fadeIn 1.2s ease}
+.hero-content{max-width:650px;animation:slideUp 1s ease}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:13px;font-weight:bold}
+.hero h1{font-size:clamp(36px,6vw,62px);line-height:1.1;margin:18px 0}
+.hero p{font-size:17px}.price{font-size:34px;font-weight:bold;margin-top:20px;color:var(--gold)}
+.button{display:inline-block;background:var(--gold);color:var(--navy);padding:14px 27px;margin-top:25px;text-decoration:none;font-weight:bold;border-radius:3px;transition:.3s}
+.button:hover{background:white;transform:translateY(-3px)}
+section{padding:75px 8%}
+.section-title{color:var(--navy);font-size:32px;text-align:center;margin-bottom:15px}
+.section-subtitle{text-align:center;color:#777;margin-bottom:40px}
+.details,.gallery{background:var(--light)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto}
+.stat{background:white;text-align:center;padding:30px 15px;border-bottom:3px solid var(--gold);transition:.3s}
+.stat:hover{transform:translateY(-7px);box-shadow:0 10px 25px rgba(0,0,0,.08)}
+.stat h3{color:var(--navy);font-size:29px}.stat p{color:#777;font-size:14px}
+.features{max-width:900px;margin:auto}
+.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.feature{padding:20px;border:1px solid #e7e7e7;border-radius:4px;transition:.3s}
+.feature:hover{border-color:var(--gold);transform:translateX(5px)}
+.feature span{color:var(--gold);font-weight:bold;margin-right:10px}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:1100px;margin:auto}
+.photo{height:300px;overflow:hidden;position:relative;background:var(--navy);border-radius:5px}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.photo:hover img{transform:scale(1.07)}
+.photo-label{position:absolute;bottom:0;left:0;right:0;padding:16px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.8));font-weight:bold}
+.contact{background:var(--navy);color:white;text-align:center}
+.contact h2{color:white}.contact p{margin-top:12px}
+.contact .agent{font-size:25px;color:var(--gold);font-weight:bold;margin-top:25px}
+.contact a{color:var(--gold);text-decoration:none}
+footer{background:#151e32;color:white;text-align:center;padding:20px;font-size:13px}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideUp{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media(max-width:700px){
+header{justify-content:center;text-align:center}nav{width:100%}
+nav a{margin:0 8px;font-size:12px}
+.hero{min-height:430px;padding:60px 7%;background-position:center}
+.stats{grid-template-columns:1fr;gap:12px}
+.feature-grid,.gallery-grid{grid-template-columns:1fr}
+.photo{height:250px}section{padding:55px 6%}
+.section-title{font-size:27px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">REYES <span>HOME GROUP</span></div>
+  <nav><a href="#details">Details</a><a href="#features">Features</a><a href="#gallery">Photos</a><a href="#contact">Contact</a></nav>
+</header>
+<div class="hero"><div class="hero-content">
+  <div class="eyebrow">Property Listing</div>
+  <h1>77 Birch Court,<br>Unit 4</h1>
+  <p>Riverside Heights, Sacramento</p>
+  <div class="price">$315,000</div>
+  <a href="#contact" class="button">Contact Agent</a>
+</div></div>
+<section class="details" id="details">
+  <h2 class="section-title">Property Overview</h2><p class="section-subtitle">77 Birch Court, Unit 4</p>
+  <div class="stats">
+    <div class="stat"><h3>2</h3><p>Bedrooms</p></div>
+    <div class="stat"><h3>1</h3><p>Bathroom</p></div>
+    <div class="stat"><h3>980</h3><p>Square Feet</p></div>
+  </div>
+</section>
+<section id="features">
+  <h2 class="section-title">Property Features</h2><p class="section-subtitle">Explore the features of this property.</p>
+  <div class="features"><div class="feature-grid">
+    <div class="feature"><span>✦</span>New floors 2024</div>
+    <div class="feature"><span>✦</span>East-facing balcony</div>
+    <div class="feature"><span>✦</span>1 parking space</div>
+    <div class="feature"><span>✦</span>HOA fee includes water</div>
+  </div></div>
+</section>
+<section class="gallery" id="gallery">
+  <h2 class="section-title">Property Gallery</h2><p class="section-subtitle">77 Birch Court, Unit 4</p>
+  <div class="gallery-grid">
+    <div class="photo"><img src="images/front.jpg" alt="Front of the property"><div class="photo-label">Front</div></div>
+    <div class="photo"><img src="images/living-room.jpg" alt="Living room"><div class="photo-label">Living Room</div></div>
+    <div class="photo"><img src="images/kitchen.jpg" alt="Kitchen"><div class="photo-label">Kitchen</div></div>
+    <div class="photo"><img src="images/balcony.jpg" alt="East-facing balcony"><div class="photo-label">Balcony</div></div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <h2 class="section-title">Contact the Agent</h2><p>For inquiries about this property:</p>
+  <div class="agent">Dana Reyes</div><p>Reyes Home Group</p>
+  <p><a href="tel:+15550142290">(555) 014-2290</a></p>
+  <a href="tel:+15550142290" class="button">Call Dana Reyes</a>
+</section>
+<footer><p>77 Birch Court, Unit 4 | Reyes Home Group</p></footer>
+</body>
+</html>
